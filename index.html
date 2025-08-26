@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Feed Instagram con Boostrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="bi bi-instagram"></i>
+              <span class="p-0 fs-6"><b>Instagram</b></span>
+                 </a>
+                 
+          </li>
+        </ul>
+        <div class="d-flex me-5" role="search">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> -->
+          <button class="btn btn-success me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new
+            post</button>
+          <div class="btn-group " role="group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-gear-fill"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>Caption:</h4>
+          <textarea class="form-control" id="message" name="message" aria-describedby="passwordHelpBlock" rows="2"
+            style="resize: none;" tabindex="10" placeholder="Add the caption of your post here"></textarea>
+          <div class="d-flex flex-direction-start">
+          <button type="button" class="personal me-1 mt-2">
+              <i class="bi bi-camera-fill "></i>
+
+          </button>
+          <button type="button" class="personal mt-2">
+              <i class="bi bi-geo-alt-fill"></i>
+
+          </button>
+          </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pestañas -->
+  <ul class="nav nav-tabs d-flex justify-content-center " id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+        aria-controls="home" aria-selected="true">
+        <i class="bi bi-grid-3x3-gap"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="profile-tab bg-primary" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+        role="tab" aria-controls="profile" aria-selected="false">
+        <i class="bi bi-square-fill"></i></button>
+    </li>
+  </ul>
+
+  <!-- Contenido de las Pestañas -->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center mt-4 mb-5">
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+          <div class="col-4 p-1">
+            <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show active " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="container">
+        <div class="row justify-content-center align-items-center mt-4">
+          <div class="col-6">
+
+            <div class="post-card">
+              <div class="card text-center">
+                <div class="card2-header d-flex justify-content-between">
+                  <div class="p-2 fw-bold">
+                    <span>
+                      This in a great photo
+                    </span>
+                  </div>
+                  <div class="p-2 fw-bold">
+                    <span class="jdustify-content-end">06/20</span>
+                  </div>
+                </div>
+                <div>
+                  <img class="img-fluid" src="https://picsum.photos/id/10/600/300" alt="">
+                </div>
+                <div class="cared-footer tedxt-body-secondary text-start pb-4">
+                  <span class="p-2 fw-bold fs-4">
+                    4650 Likes
+                  </span>
+                  <br>
+                  <span class="ms-2 fw-bold fs-6">
+                    This a an example of a very good photo that yo can post on instagram
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center mt-4">
+          <div class="col-6">
+
+            <div class="post-card">
+              <div class="card text-center">
+                <div class="card2-header d-flex justify-content-between">
+                  <div class="p-2 fw-bold">
+                    <span>
+                      This in a great photo
+                    </span>
+                  </div>
+                  <div class="p-2 fw-bold">
+                    <span class="jdustify-content-end">08/11</span>
+                  </div>
+                </div>
+                <div>
+                  <img class="img-fluid" src="https://picsum.photos/id/12/600/300" alt="">
+                </div>
+                <div class="cared-footer tedxt-body-secondary text-start pb-4">
+                  <span class="p-2 fw-bold fs-4">
+                    1430 Likes
+                  </span>
+                  <br>
+                  <span class="ms-2 fw-bold fs-6">
+                    This a an example of a very good photo that yo can post on instagram
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center mt-4">
+          <div class="col-6">
+
+            <div class="post-card">
+              <div class="card text-center">
+                <div class="card2-header d-flex justify-content-between">
+                  <div class="p-2 fw-bold">
+                    <span>
+                      This in a great photo
+                    </span>
+                  </div>
+                  <div class="p-2 fw-bold">
+                    <span class="jdustify-content-end">12/01</span>
+                  </div>
+                </div>
+                <div>
+                  <img class="img-fluid" src="https://picsum.photos/id/11/600/300" alt="">
+                </div>
+                <div class="cared-footer tedxt-body-secondary text-start pb-4">
+                  <span class="p-2 fw-bold fs-4">
+                    510 Likes
+                  </span>
+                  <br>
+                  <span class="ms-2 fw-bold fs-6">
+                    This a an example of a very good photo that yo can post on instagram
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
